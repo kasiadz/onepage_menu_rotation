@@ -1,5 +1,6 @@
 section {
-    height: 80vh;
+    // minimajla wysokosc - przydatne do mapy bo sie rozciagnie jesli tresci jest wiecej
+    min-height: 80vh;
     position: relative;
     
 
@@ -14,6 +15,17 @@ section {
         font-size: 1.6rem;
         line-height: 2.6rem;
     }
+
+    .iframe {
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
     &:nth-of-type(even) {
         // robimy tylko jedno wyjscie w gore, bo to się odnosnie pliku css liczy
         background: url('../img/background1.jpg') center/cover no-repeat;
@@ -21,6 +33,7 @@ section {
         color: $color-light;
 
     }
+
 
 }
 
