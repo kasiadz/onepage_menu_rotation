@@ -147,4 +147,16 @@ footer {
   background-color: #161513;
   color: whitesmoke; }
 
+@media all and (max-width: 760px) {
+  html {
+    font-size: 6px; } }
+@media all and (max-width: 630px) {
+  header h1 {
+    width: 80%;
+    font-size: 4.5rem; }
+  header nav ul {
+    flex-direction: column; }
+    header nav ul li a {
+      font-size: 3.4rem; } }
+
 /*# sourceMappingURL=style.css.map */

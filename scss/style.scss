@@ -1,7 +1,10 @@
 // reset importujemy w inny sposob niz w css
+// kolejnosc importow ma znaczenie
 @import 'reset';
 @import 'variables';
 @import 'partials/head';
 @import 'partials/header';
 @import 'partials/main';
 @import 'partials/footer';
+// rwd przyjmuje sie ze sa na samym koncu
+@import 'partials/rwd';
