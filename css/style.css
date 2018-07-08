@@ -103,7 +103,7 @@ header {
           content: '';
           display: block;
           width: 0%;
-          background-color: #f07a5d;
+          background-color: #5896a8;
           transition: all .5s ease; }
         header nav ul li a:hover::after {
           width: 100%; }
@@ -114,7 +114,7 @@ header {
     bottom: 10%;
     transform: translate(-50%, -50%);
     padding: 2.5rem;
-    border: 0.4rem solid #f07a5d;
+    border: 0.4rem solid #5896a8;
     border-radius: .8rem;
     background-image: url("../img/dott.png");
     text-align: center;
@@ -137,5 +137,14 @@ section {
     background: url("../img/background1.jpg") center/cover no-repeat;
     background-attachment: fixed;
     color: whitesmoke; }
+
+footer {
+  font-size: 1rem;
+  text-align: center;
+  padding: 2rem;
+  height: 30vh;
+  width: 100%;
+  background-color: #161513;
+  color: whitesmoke; }
 
 /*# sourceMappingURL=style.css.map */
