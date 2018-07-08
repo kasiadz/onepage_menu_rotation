@@ -1,0 +1,33 @@
+// ten link się kopiuje ze strony fonts.google.com
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    // box model - box sizing: do szerokosci wchodzi content padding i border - oprocz marginesu
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    // to tez sie kopiuje z googla
+    // sans-serif - czcionka generyczna z rodziny sans-serif
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blackout {
+    // 100% z headera
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+// kontener na tekst
+.content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+
+}

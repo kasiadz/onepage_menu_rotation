@@ -61,11 +61,17 @@ body {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6); }
 
+.content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative; }
+
 header {
   background: url("../img/start.jpg") center/cover no-repeat;
   height: 100vh;
   width: 100%;
-  position: relative; }
+  position: relative;
+  background-attachment: fixed; }
   header nav {
     position: absolute;
     width: 100%;
@@ -115,5 +121,21 @@ header {
     color: #eff0f3;
     font-size: 6.5rem;
     letter-spacing: .5rem; }
+
+section {
+  height: 80vh;
+  position: relative; }
+  section h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    letter-spacing: .6rem;
+    padding: 4rem; }
+  section p {
+    font-size: 1.6rem;
+    line-height: 2.6rem; }
+  section:nth-of-type(even) {
+    background: url("../img/background1.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+    color: whitesmoke; }
 
 /*# sourceMappingURL=style.css.map */
