@@ -1,2 +1,28 @@
 // reset importujemy w inny sposob niz w css
 @import 'reset';
+// ten link się kopiuje ze strony fonts.google.com
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body{
+    // to tez sie kopiuje z googla
+    font-family: 'Open Sans', sans-serif;
+
+}
+header{
+    // funkcja url do funkcji przekazujemy parametry wewnatrz ()
+    // cover rozciaga a no repeat nie pozwala na kopiowanie obrazka na boki
+    background: url('../img/start.jpg') center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+
+    nav{
+        ul{
+            li{
+                a{
+                    color: rgb(168, 255, 157);
+                }
+            }
+        }
+    }
+}
