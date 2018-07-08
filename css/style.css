@@ -46,14 +46,41 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
+
+.blackout {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6); }
 
 header {
   background: url("../img/start.jpg") center/cover no-repeat;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   header nav ul li a {
     color: #a8ff9d; }
+  header h1 {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem;
+    border: 0.4rem solid #f07a5d;
+    border-radius: .8rem;
+    background-image: url(../img/dott.png);
+    text-align: center;
+    color: #eff0f3;
+    font-size: 6.5rem;
+    letter-spacing: .5rem; }
 
 /*# sourceMappingURL=style.css.map */
