@@ -57,26 +57,34 @@ header {
                     color: $text-link-color;
                     text-decoration: none;
                     // dodajem & zeby sie skleiło a z pseudoklasą before
-                    &::before {
+                    &::before, &::after {
                         // w before after content jest zawsze pusty
                         content: '';
                         display: block;
                         height: .2rem;
                         width: 100%;
-                        background-color: #fff;
+                        background-color: rgb(255, 255, 255);
                         position: absolute;
                         bottom: 0;
                         left: 0;
-                        transition: all .5s ease;
-                        transform: scale(0);
+                        // transition: all .5s ease;
+                        // transform: scale(0);
                         // zmiana zeby kreska szła od srodka a ne od lewej
                         // margin: 0 auto;
                         // left: 0;
                         // right: 0;
                     }
-                    &:hover::before {
-                        // width: 100%;
-                        transform: scale(1);
+                    &::after {
+                        // w before after content jest zawsze pusty
+                        content: '';
+                        display: block;
+                        width: 0%;
+                        background-color: $border-color-h1;
+                        transition: all .5s ease;
+                    }
+                    &:hover::after {
+                        width: 100%;
+                        // transform: scale(1);
                     }
                 }
             }

@@ -84,19 +84,23 @@ header {
         letter-spacing: .3rem;
         color: #eff0f3;
         text-decoration: none; }
-        header nav ul li a::before {
+        header nav ul li a::before, header nav ul li a::after {
           content: '';
           display: block;
           height: .2rem;
           width: 100%;
-          background-color: #fff;
+          background-color: white;
           position: absolute;
           bottom: 0;
-          left: 0;
-          transition: all .5s ease;
-          transform: scale(0); }
-        header nav ul li a:hover::before {
-          transform: scale(1); }
+          left: 0; }
+        header nav ul li a::after {
+          content: '';
+          display: block;
+          width: 0%;
+          background-color: #f07a5d;
+          transition: all .5s ease; }
+        header nav ul li a:hover::after {
+          width: 100%; }
   header h1 {
     position: absolute;
     width: 60%;
